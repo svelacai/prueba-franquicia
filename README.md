@@ -43,7 +43,20 @@ Para ejecutar la aplicación localmente, asegúrate de tener instalado Java 17+ 
 
 1.  **Clonar el repositorio:** `git clone <https://github.com/svelacai/prueba-franquicia.git>`
 2.  **Configurar MySQL**:
-    * Actualiza el archivo `src/main/resources/application.properties` con las credenciales de tu base de datos
+    * Actualiza el archivo `src/main/resources/application.properties` con las credenciales de tu base de datos:
+     ```properties
+        spring.application.name=prueba-franquicia
+
+		# ===============================
+		#  Configuración de MySQL (Aiven) con R2DBC
+		# ===============================
+		spring.r2dbc.url=r2dbc:mysql://mysql-franquicia-santiago-4acf.b.aivencloud.com:27518/defaultdb
+		spring.r2dbc.username=avnadmin
+		spring.r2dbc.password=AVNS_trd2DWx_sOlG0xbcMDi
+
+		spring.sql.init.mode=always
+		logging.level.prototipe.franquicia=INFO
+		```
 
 
 La aplicación se iniciará en `http://localhost:8080`.
