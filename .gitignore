@@ -1,0 +1,12 @@
+# Ignorar archivos de configuración sensibles
+*.properties
+*.yml
+
+# Archivos de sistema
+*.log
+*.tmp
+
+# Archivos de compilación (Java / Spring Boot)
+target/
+build/
+out/
