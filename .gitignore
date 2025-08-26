@@ -1,6 +1,6 @@
 # Ignorar archivos de configuración sensibles
-*.properties
-*.yml
+#*.properties
+#*.yml
 
 # Archivos de sistema
 *.log
